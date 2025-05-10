@@ -1,14 +1,7 @@
 const User = require("../models/user.js");
 const express = require('express');
-const router = express.Router();
-const passport = require("passport");
-const userCentroller = require("../controllers/user.js");
-const passportLocalMongoose = require("passport-local-mongoose");
-const localStrategy = require("passport-local");
 const wrapAsync = require("../utils/wrapAsync.js");
 const Listing = require("../models/listing.js");
-
-const { userSchema } = require("../schema.js");
 
 module.exports.loginpost = async (req, res) => {
     req.flash("success", "Welcome to Vinayak Cyber Zone and Travels");

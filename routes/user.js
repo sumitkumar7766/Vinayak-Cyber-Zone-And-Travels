@@ -1,10 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const User = require("../models/user.js");
 const passport = require("passport");
 const userCentroller = require("../controllers/user.js");
-const passportLocalMongoose = require("passport-local-mongoose");
-const localStrategy = require("passport-local");
 const wrapAsync = require("../utils/wrapAsync.js");
 const { isLoggedIn } = require("../middleware.js");
 const userMiddlewere = require("../controllers/user.js");

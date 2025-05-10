@@ -7,7 +7,6 @@ const mongoose = require('mongoose');
 const app = express();
 app.use(express.json());
 const path = require('path');
-const ejs = require('ejs');
 const ejsMate = require('ejs-mate');
 app.use(express.json());
 const User = require("./models/user");
@@ -16,7 +15,6 @@ const passport = require("passport");
 const localStrategy = require("passport-local");
 const session = require("express-session");
 const MongoStore = require('connect-mongo');
-const ExpressError = require("./utils/ExpressError.js");
 const flash = require('connect-flash');
 const methodOverride = require("method-override");
 
@@ -56,9 +54,9 @@ const store = MongoStore.create({
     touchAfter: 24 * 3600,
 });
 
-// store.on("error", (err) => {
-//     console.log("Error in Mongo Session Store", err);
-// });
+store.on("error", (err) => {
+    console.log("Error in Mongo Session Store", err);
+});
 
 const sessionOptions = {
     store,

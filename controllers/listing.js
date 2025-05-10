@@ -1,15 +1,8 @@
 const Listing = require("../models/listing.js");
 const express = require('express');
-const router = express.Router();
-const passport = require("passport");
-const userCentroller = require("../controllers/user.js");
-const passportLocalMongoose = require("passport-local-mongoose");
-const localStrategy = require("passport-local");
 const wrapAsync = require("../utils/wrapAsync.js");
 const SubListing = require("../models/sublisting.js");
 
-const { userSchema } = require("../schema.js");
-const { model } = require("mongoose");
 
 module.exports.index = wrapAsync(async (req, res) => {
     const allListings = await Listing.find({});
