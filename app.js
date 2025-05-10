@@ -105,16 +105,6 @@ app.use("/owner", OwnerRouter);
 app.use("/user", userRouter);
 app.use("/listing", listingRout);
 
-app.get('/', (req, res) => {
-    res.render("user/index.ejs");
-});
-
-app.delete("/owner/listing/:id", async (req, res) => {
-    const { id } = req.params;
-    await Lesting.findByIdAndDelete(id);
-    res.render("homepage/admin");
-});
-
 
 
 app.use((err, req, res, next) => {
