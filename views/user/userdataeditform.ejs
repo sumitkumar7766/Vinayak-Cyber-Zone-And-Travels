@@ -1,0 +1,174 @@
+<% layout("/layouts/boilerplateUser.ejs") %>
+
+    <main>
+        <hr>
+        <div class="col-8 offset-2">
+            <div class="offset-4 mt-5 mb-2 text-info text-decoration-underline">
+                <h1>User Data Edit Form</h1>
+            </div>
+            <form action="/user/<%= userdataupdate._id %>?_method=PUT" method="post" novalidate
+                class="needs-validation">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" name="name" class="form-control" value="<%= userdataupdate.name %>" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Please Enter Name.
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" name="username" id="username" class="form-control"
+                        value="<%= userdataupdate.username %>" required></input>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Please Enter Username.
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Gamil</label>
+                    <input type="text" name="email" id="email" class="form-control" value="<%= userdataupdate.email %>"
+                        required></input>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Please Enter Gmail.
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="fathername" class="form-label">Father Name</label>
+                    <input type="text" name="fathername" class="form-control" value="<%= userdataupdate.fathername %>"
+                        required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Please Enter Father Name.
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="mothername" class="form-label">Mother Name</label>
+                    <input type="text" name="mothername" id="mothername" class="form-control"
+                        value="<%= userdataupdate.mothername %>" required></input>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Please Enter Mother Name.
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="mobileno" class="form-label">Mobile No.</label>
+                    <input type="text" name="mobileno" id="mobileno" class="form-control"
+                        value="<%= userdataupdate.mobileno %>" required></input>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Please Enter Gmail.
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="mb-3 col-md-6">
+                        <label for="gram" class="form-label">Gram</label>
+                        <input type="text" name="gram" class="form-control" value="<%= userdataupdate.gram %>"
+                            required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please Enter Gram.
+                        </div>
+                    </div>
+                    <div class="mb-3 col-md-6">
+                        <label for="post" class="form-label">Post</label>
+                        <input type="text" name="post" id="post" class="form-control"
+                            value="<%= userdataupdate.post %>" required></input>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please Enter Post.
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="mb-3 col-md-6">
+                        <label for="thana" class="form-label">Thana</label>
+                        <input type="text" name="thana" id="thana" class="form-control"
+                            value="<%= userdataupdate.thana %>" required></input>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please Enter Thana.
+                        </div>
+                    </div>
+                    <div class="mb-3 col-md-6">
+                        <label for="city" class="form-label">City</label>
+                        <input type="text" name="city" class="form-control" value="<%= userdataupdate.city %>"
+                            required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please Enter City.
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="mb-3 col-md-6">
+                        <label for="state" class="form-label">State</label>
+                        <input type="text" name="state" id="state" class="form-control"
+                            value="<%= userdataupdate.state %>" required></input>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please Enter State.
+                        </div>
+                    </div>
+                    <div class="mb-3 col-md-6">
+                        <label for="country" class="form-label">Country</label>
+                        <input type="text" name="country" id="country" class="form-control"
+                            value="<%= userdataupdate.country %>" required></input>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please Enter Country.
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="pincode" class="form-label">Pincode</label>
+                    <input type="text" name="pincode" id="pincode" class="form-control"
+                        value="<%= userdataupdate.pincode %>" required></input>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Please Enter Pincode.
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                            Agree to terms and conditions
+                        </label>
+                        <div class="invalid-feedback">
+                            You must agree before submitting.
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-success mt-2">Add List</button>
+                <a href="/user/viewprofile"><p class="btn btn-danger mt-4 ms-3">Cancle</p></a>
+            </form>
+        </div>
+    </main>

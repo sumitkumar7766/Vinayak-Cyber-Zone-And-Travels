@@ -1,0 +1,75 @@
+<% layout("/layouts/boilerplateUser.ejs") %>
+
+
+    <main>
+        <hr>
+        <div class="foruserdataeditback">
+            <form action="/user/<%= userdata._id %>/edit" method="get">
+                <button class="btn btn-success me-3">Edit</button>
+            </form>
+            <form action="/user/userhome" method="get">
+                <button class="btn btn-warning me-4">Back</button>
+            </form>
+        </div>
+        <div class="col-8 offset-2 mt-4 mb-5">
+            <h1 class="userdata">Your Data</h1>
+            <table>
+                <tr class="tableheaderuserdata">
+                    <th>List</th>
+                    <th>Value</th>
+                </tr>
+                <tr class="tablefooteruserdata">
+                    <td class="bolddata1user ps-2">Name :</td>
+                    <td class="text-warning ps-2"><%= userdata.name %></td>
+                </tr>
+                <tr class="tablefooteruserdata">
+                    <td class="bolddata1user ps-2">Username :</td>
+                    <td class="text-warning ps-2"><%= userdata.username %></td>
+                </tr>
+                <tr class="tablefooteruserdata">
+                    <td class="bolddata1user ps-2">Gmail :</td>
+                    <td class="text-warning ps-2"><%= userdata.email %></td>
+                </tr>
+                <tr class="tablefooteruserdata">
+                    <td class="bolddata1user ps-2">Father Name :</td>
+                    <td class="text-warning ps-2"><%= userdata.fathername %></td>
+                </tr>
+                <tr class="tablefooteruserdata">
+                    <td class="bolddata1user ps-2">Mother Name :</td>
+                    <td class="text-warning ps-2"><%= userdata.mothername %></td>
+                </tr>
+                <tr class="tablefooteruserdata">
+                    <td class="bolddata1user ps-2">Mobile No. 1 :</td>
+                    <td class="text-warning ps-2"><%= userdata.mobileno %></td>
+                </tr>
+                <tr class="tablefooteruserdata">
+                    <td class="bolddata1user ps-2">Gram :</td>
+                    <td class="text-warning ps-2"><%= userdata.gram %></td>
+                </tr>
+                <tr class="tablefooteruserdata">
+                    <td class="bolddata1user ps-2">Post :</td>
+                    <td class="text-warning ps-2"><%= userdata.post %></td>
+                </tr>
+                <tr class="tablefooteruserdata">
+                    <td class="bolddata1user ps-2">Thana :</td>
+                    <td class="text-warning ps-2"><%= userdata.thana %></td>
+                </tr>
+                <tr class="tablefooteruserdata">
+                    <td class="bolddata1user ps-2">City :</td>
+                    <td class="text-warning ps-2"><%= userdata.thana %></td>
+                </tr>
+                <tr class="tablefooteruserdata">
+                    <td class="bolddata1user ps-2">State :</td>
+                    <td class="text-warning ps-2"><%= userdata.state %></td>
+                </tr>
+                <tr class="tablefooteruserdata">
+                    <td class="bolddata1user ps-2">Country :</td>
+                    <td class="text-warning ps-2"><%= userdata.country %></td>
+                </tr>
+                <tr class="tablefooteruserdata">
+                    <td class="bolddata1user ps-2">Pincode :</td>
+                    <td class="text-warning ps-2"><%= userdata.pincode %></td>
+                </tr>
+            </table>
+        </div>
+    </main>

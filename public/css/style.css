@@ -1,0 +1,1525 @@
+* {
+    color: white;
+}
+
+body {
+    background-color: black;
+    background-image: url("https://res.cloudinary.com/dbq93byo2/image/upload/v1745850927/7_eyn0td.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+.logo {
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Londrina Sketch", sans-serif;
+    font-style: normal;
+    margin-top: 10px;
+    animation: Zoomin 2s infinite;
+    margin-left: 20px;
+
+}
+
+header {
+    height: auto;
+}
+
+
+.logo2 {
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Londrina Sketch", sans-serif;
+    font-style: normal;
+    animation: Zoomin 2s infinite;
+    margin-left: 90px;
+
+}
+
+.mainnav {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    height: 150px;
+}
+
+
+.logo-container {
+    height: 100px;
+}
+
+.loginbutton {
+    width: 150px !important;
+}
+
+@keyframes Zoomin {
+    0% {
+        /* font-size: 3rem; */
+    }
+
+    50% {
+        /* font-size: 3.5rem; */
+        text-shadow: 0px 0px 30px red;
+        color: red;
+    }
+
+    100% {
+        /* font-size: 3rem; */
+    }
+}
+
+.navelement {
+    display: flex;
+    margin-left: 200px;
+    margin-top: 20px;
+    height: 50px;
+}
+
+.navelement a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 30px;
+    /* font-style: normal; */
+    font-weight: none;
+}
+
+.navelement a:hover {
+    font-size: 22px;
+    text-shadow: 0px 0px 30px red;
+    color: red;
+    text-decoration: underline;
+}
+
+.agentbuttmain {
+    margin-top: 20px;
+}
+
+.agentbuttmain button {
+    margin-top: 10px;
+    height: 60px;
+    width: 200px;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    background-color: orangered;
+    border-radius: 10px;
+    cursor: pointer;
+    color: rgb(191, 248, 78);
+}
+
+.maincontent {
+    width: 100%;
+    height: auto;
+    /* background-color: white; */
+    padding-top: 100px;
+    text-align: center;
+}
+
+.content button {
+    height: 60px;
+    width: 400px;
+    border-radius: 10px;
+    background-color: rgb(2, 32, 75);
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+
+.nameofowner {
+    margin-top: 30px;
+    font-size: 5.5rem;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.nameofowner p {
+    margin: 0px;
+    padding: 0px;
+    color: rgb(189, 187, 187);
+}
+
+.location {
+    margin-top: 10px;
+    font-size: 1.3rem;
+    font-weight: 100;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.welcome {
+    margin-top: 50px;
+}
+
+.welcome button {
+    height: 70px;
+    width: 300px;
+    background-color: orangered;
+    color: rgb(190, 255, 59);
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: 300;
+    pointer-events: none;
+}
+
+.imgofmainthing {
+    margin-top: 150px;
+    width: 100%;
+    height: auto;
+}
+
+.imgofmainthing img {
+    width: 1200px;
+    height: auto;
+    view-timeline: --subjectReveal block;
+    animation-timeline: --subjectReveal;
+
+    animation-name: appear;
+    animation-fill-mode: both;
+    animation-duration: 1ms;
+    /* Firefox requires this to apply the animation */
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: scaleX(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: scaleX(1);
+    }
+}
+
+.relatedwork {
+    margin-top: 100px;
+    font-size: 30px;
+}
+
+
+
+.one11 {
+    font-size: 70px;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 10px;
+    color: rgb(0, 242, 255);
+}
+
+.relatedwork p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.imagecontar {
+    height: 130px;
+    margin: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.imagecontar img {
+    height: 100px;
+}
+
+.travelmain {
+    height: auto;
+    width: 100%;
+    background-color: white;
+    margin-top: 100px;
+    border-radius: 10px;
+    padding-bottom: 100px;
+}
+
+.travelbutton button {
+    height: 50px;
+    width: 500px;
+    margin-top: 150px;
+    background-color: rgb(205, 243, 255);
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    align-items: center;
+    border: none;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.trainticket h1 {
+    color: black;
+    font-size: 5rem;
+    font-weight: 100;
+    margin: 0px;
+    margin-top: 30px;
+}
+
+.trainticket p {
+    color: rgb(80, 79, 79);
+    margin: 0px;
+    margin-top: 10px;
+    padding: 0px;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.trainticket button {
+    height: 60px;
+    width: 200px;
+    border-radius: 10px;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 30px;
+    background-color: orangered;
+    font-size: 1.3rem;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    pointer-events: painted;
+}
+
+.boxmain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: left;
+}
+
+.box1 {
+    height: 670px;
+    width: 600px;
+    background-color: black;
+    margin: 0px;
+    border-radius: 10px;
+}
+
+.box1 h1 {
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.box1 p {
+    font-size: 1.3rem;
+    padding: 0px;
+    padding-left: 40px;
+    padding-right: 20px;
+}
+
+.box1 img {
+    width: 500px;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-top: 100px;
+    border-radius: 10px;
+}
+
+.box2 {
+    height: 670px;
+    width: 950px;
+    background-color: black;
+    margin: 0px;
+    border-radius: 10px;
+}
+
+.box2 h1 {
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.box2 p {
+    font-size: 1.3rem;
+    padding: 0px;
+    padding-left: 40px;
+    padding-right: 20px;
+}
+
+.box2 img {
+    width: 800px;
+    margin-top: 20px;
+    margin-left: 70px;
+    border-radius: 10px;
+}
+
+.box3 {
+    height: 670px;
+    width: 950px;
+    background-color: black;
+    margin: 0px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.box3 h1 {
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.box3 p {
+    font-size: 1.3rem;
+    padding: 0px;
+    padding-left: 40px;
+    padding-right: 20px;
+}
+
+.box3 img {
+    width: 670px;
+    margin-top: 20px;
+    margin-left: 25px;
+    border-radius: 10px;
+    margin-left: 145px;
+}
+
+.box4 {
+    height: 670px;
+    width: 600px;
+    background-color: black;
+    margin: 0px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.box4 h1 {
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.box4 p {
+    font-size: 1.3rem;
+    padding: 0px;
+    padding-left: 40px;
+    padding-right: 20px;
+}
+
+.box4 img {
+    width: 500px;
+    margin-top: 20px;
+    margin-left: 55px;
+    margin-top: 100px;
+    border-radius: 10px;
+}
+
+.whychoise {
+    padding-top: 50px;
+    height: auto;
+    width: 100%;
+}
+
+.content1 button {
+    height: 60px;
+    width: 400px;
+    border-radius: 10px;
+    background-color: #e4f4ff;
+    border: none;
+    font-size: 1.4rem;
+    font-weight: 100;
+    color: black;
+}
+
+.content1 {
+    display: flex;
+    justify-content: left;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+.textcon {
+    align-items: left;
+    margin-left: 50px;
+    color: black;
+}
+
+.textcon h1 {
+    color: rgb(255, 255, 170);
+    align-items: start;
+    margin: 0px;
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: 4.5rem;
+
+}
+
+.textcon p {
+    color: black;
+    align-items: start;
+    margin: 0px;
+    margin-left: 50px;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: rgb(252, 225, 225);
+}
+
+.threecondiyion {
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+}
+
+.box5 {
+    background-color: rgb(164, 208, 226);
+    height: auto;
+    width: 500px;
+    border-radius: 20px;
+    padding-bottom: 60px;
+    cursor: default;
+}
+
+.box5:hover {
+    background-color: rgb(197, 231, 243);
+}
+
+.box5 button {
+    height: 80px;
+    width: 75px;
+    border-radius: 20px;
+    font-size: 3rem;
+    background-color: orangered;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.box5 h1 {
+    width: 70%;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 50px;
+    margin-top: 20px;
+    color: black;
+    font-weight: 200;
+    font-size: 2.5rem;
+}
+
+.box5 h3 {
+    width: 70%;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 50px;
+    margin-top: 20px;
+    color: rgb(60, 59, 59);
+    font-weight: 200;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.locationofShop {
+    height: 1000px;
+    width: 100%;
+    background-color: black;
+    ;
+    margin-top: 100px;
+    margin-bottom: 200px
+}
+
+.mother-Container-loc {
+    height: auto;
+    width: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    top: 25%;
+    left: 10%;
+}
+
+.mother-Container-loc p {
+    font-size: 4.5rem;
+    width: 80%;
+    text-align: center;
+}
+
+.mother-Container-loc button {
+    height: 70px;
+    width: 300px;
+    margin-top: 20px;
+    background-color: orangered;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.imgoflocation1 img {
+    height: 400px;
+    border-radius: 10px;
+    position: relative;
+    top: -550px;
+    left: 20px;
+    bottom: 0px;
+
+}
+
+.imgoflocation2 img {
+    height: 400px;
+    border-radius: 10px;
+    position: relative;
+    top: -490px;
+    left: 82%;
+    bottom: 0px;
+}
+
+.imgoflocation3 img {
+    height: 400px;
+    border-radius: 10px;
+    position: relative;
+    top: -550px;
+    left: 20px;
+    bottom: 0px;
+}
+
+footer {
+    height: auto;
+    width: 100%;
+    background-color: white;
+}
+
+.maincontener {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.footerbox1 {
+    height: 300px;
+    width: 300px;
+    /* background-color: black; */
+    margin: 0px;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.footerbox2 {
+    height: 300px;
+    width: 300px;
+    margin: 0px;
+    margin-top: 50px;
+    margin-top: 100px;
+    margin-left: 100px;
+
+}
+
+.footerbox3 {
+    height: 300px;
+    width: 300px;
+    margin: 0px;
+    margin-top: 100px;
+}
+
+.footerbox4 {
+    height: 300px;
+    width: 300px;
+    margin: 0px;
+    margin-top: 50px;
+    margin-top: 100px;
+
+}
+
+.logofoot {
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: black;
+    text-decoration: none;
+    font-family: "Londrina Sketch", sans-serif;
+    font-style: normal;
+    margin-top: 50px;
+    /* animation: Zoomin 2s infinite; */
+
+}
+
+.logo2foot {
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: black;
+    text-decoration: none;
+    font-family: "Londrina Sketch", sans-serif;
+    font-style: normal;
+    /* animation: Zoomin 2s infinite; */
+
+}
+
+.footerbox1 button {
+    background-color: orangered;
+    border: none;
+    height: 70px;
+    width: 230px;
+    border-radius: 10px;
+    margin-top: 50px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.footerbox1 a {
+    color: black;
+    font-size: 1.2rem;
+}
+
+.footerbox2 h1 {
+    font-size: 3rem;
+    font-weight: 100;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.footerbox2 p {
+    font-size: 1.1rem;
+    font-weight: 100;
+    color: black;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.footerbox3 h1 {
+    font-size: 3rem;
+    font-weight: 100;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.footerbox3 p {
+    font-size: 1.1rem;
+    font-weight: 100;
+    color: black;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.footerbox4 h1 {
+    font-size: 3rem;
+    font-weight: 100;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.footerbox4 p {
+    font-size: 1.1rem;
+    font-weight: 100;
+    color: black;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.linethotedoot p {
+    color: black;
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 20px;
+    margin-top: 70px;
+}
+
+.linethotedoot {
+    display: flex;
+    justify-content: center;
+}
+
+.lastfootsection {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding-bottom: 15px;
+}
+
+.onefootbox {
+    width: 87%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.onesubfootbox {
+    width: 35%;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.onesubfootbox p {
+    color: black;
+    font-size: 1.1rem;
+    padding: 0px;
+    margin: 0px;
+}
+
+.twosubfootbox p {
+    color: black;
+    font-size: 1.1rem;
+    padding: 0px;
+    margin: 0px;
+}
+
+.footerbox2 p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: orangered;
+    font-size: 1.11rem;
+}
+
+.footerbox3 p:hover {
+    text-decoration: underline;
+    color: orangered;
+    font-size: 1.12rem;
+    cursor: pointer;
+}
+
+.footerbox4 p:hover {
+    color: orangered;
+    text-decoration: underline;
+    font-size: 1.12rem;
+    cursor: pointer;
+}
+
+.footerbox1 button:hover {
+    background-color: greenyellow;
+    color: black;
+}
+
+.footerbox1 a:hover {
+    color: orangered;
+    font-size: 1.22rem;
+}
+
+.onesubfootbox p:hover {
+    color: orangered;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 1.12rem;
+}
+
+.mother-Container-loc button:hover {
+    background-color: greenyellow;
+    color: black;
+}
+
+.trainticket button:hover {
+    background-color: greenyellow;
+    color: black;
+}
+
+.agentbuttmain button:hover {
+    background-color: greenyellow;
+    color: black;
+}
+
+.bgoflogindiv {
+    width: 800px;
+}
+
+/* agent page style */
+.agentbuttonprofile {
+    height: 50px !important;
+    margin-top: 40px !important;
+    margin-left: 0px !important;
+    width: 200px !important;
+    font-size: 1.2rem !important;
+}
+
+.nameofowner1 {
+    font-size: 3rem;
+    color: rgb(0, 229, 255);
+}
+
+.elemtofagent {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+/* adding key fram to the page */
+@media (max-width: 1400px) {
+    body {
+        background-color: black;
+        background-image: url("Other/img-for-main/7.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        margin: 0px;
+        padding: 0px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .logo-container {
+        height: 60px;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .logo-container {
+        height: 60px;
+    }
+
+    .logo2 {
+        text-align: left;
+        margin: 0px;
+        padding: 0px;
+        font-size: 1.5rem;
+        font-weight: bolder;
+        color: #ffffff;
+        text-decoration: none;
+        font-family: "Londrina Sketch", sans-serif;
+        font-style: normal;
+        animation: Zoomin 2s infinite;
+        margin-left: 60px;
+
+    }
+
+    .mainnav {
+        height: 150px;
+    }
+
+    .navelement {
+        display: flex;
+        margin-left: 220px;
+        margin-top: 0px;
+        width: 700px;
+    }
+
+    .navelement a {
+        font-size: 15px;
+    }
+
+    .navelement a:hover {
+        font-size: 17px;
+        text-shadow: 0px 0px 10px red;
+        color: red;
+        text-decoration: underline;
+    }
+
+    .maincontent {
+        padding-top: 80px;
+    }
+
+    .agentbuttmain {
+        margin-top: 0px;
+    }
+
+    .agentbuttmain button {
+        height: 40px;
+        width: 150px;
+        font-size: 1rem;
+        margin-top: 18px;
+    }
+
+    .content button {
+        height: 50px;
+        width: 300px;
+        border-radius: 8px;
+        background-color: rgb(2, 32, 75);
+        border: none;
+        font-size: 1.1rem;
+        font-weight: 80;
+    }
+
+    .nameofowner {
+        margin-top: 25px;
+        font-size: 4.5rem;
+        font-weight: bolder;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .location {
+        margin-top: 7px;
+        font-size: 1rem;
+        font-weight: 70;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .welcome {
+        margin-top: 30px;
+    }
+
+    .welcome button {
+        height: 50px;
+        width: 200px;
+        background-color: orangered;
+        color: rgb(190, 255, 59);
+        border-radius: 7px;
+        font-size: 1rem;
+        font-weight: 200;
+        pointer-events: none;
+    }
+
+    .imgoflocation2 img {
+        left: 77%;
+    }
+
+    .imgofmainthing {
+        margin-top: 150px;
+        width: 90%;
+        height: auto;
+    }
+
+    .relatedwork {
+        margin-top: 80px;
+        font-size: 20px;
+    }
+
+    .one11 {
+        font-size: 60px;
+    }
+
+    .imagecontar {
+        height: 110px;
+    }
+
+    .imagecontar img {
+        height: 80px;
+    }
+
+    .travelmain {
+        margin-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .travelbutton button {
+        height: 40px;
+        width: 400px;
+        margin-top: 130px;
+        font-size: 1rem;
+    }
+
+    .trainticket h1 {
+        font-size: 4.5rem;
+        font-weight: 100;
+        margin-top: 20px;
+    }
+
+    .trainticket p {
+        color: rgb(80, 79, 79);
+        margin: 0px;
+        margin-top: 5px;
+        padding: 0px;
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+
+    .trainticket button {
+        height: 50px;
+        width: 170px;
+        border-radius: 7px;
+        margin-top: 20px;
+        font-size: 1.1rem;
+    }
+
+    .boxmain {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .box1 {
+        height: 500px;
+        width: 550px;
+    }
+
+    .box1 h1 {
+        margin-left: 40px;
+        margin-top: 20px;
+    }
+
+    .box1 p {
+        font-size: 1.1rem;
+        padding: 0px;
+        padding-left: 40px;
+        padding-right: 20px;
+    }
+
+    .box1 img {
+        width: 400px;
+        margin-left: 50px;
+        margin-top: 30px;
+        border-radius: 10px;
+    }
+
+    .box2 {
+        height: 500px;
+        width: 620px;
+        background-color: black;
+        margin: 0px;
+        border-radius: 10px;
+    }
+
+    .box2 h1 {
+        margin-left: 40px;
+        margin-top: 20px;
+    }
+
+    .box2 p {
+        font-size: 1.1rem;
+    }
+
+    .box2 img {
+        width: 550px;
+        margin-top: 10px;
+        margin-left: 40px;
+        border-radius: 10px;
+    }
+
+    .box3 {
+        height: 500px;
+        width: 650px;
+        background-color: black;
+        margin: 0px;
+        margin-top: 30px;
+        border-radius: 10px;
+    }
+
+    .box3 h1 {
+        margin-left: 40px;
+        margin-top: 20px;
+    }
+
+    .box3 p {
+        font-size: 1.1rem;
+    }
+
+    .box3 img {
+        width: 550px;
+        height: 300px;
+        margin-top: 10px;
+        margin-left: 40px;
+        border-radius: 10px;
+    }
+
+    .box4 {
+        height: 500px;
+        width: 550px;
+    }
+
+    .box4 h1 {
+        margin-left: 40px;
+        margin-top: 20px;
+    }
+
+    .box4 p {
+        font-size: 1.1rem;
+        padding: 0px;
+        padding-left: 40px;
+        padding-right: 20px;
+    }
+
+    .box4 img {
+        width: 400px;
+        height: 200px;
+        margin-left: 50px;
+        margin-top: 5px;
+        border-radius: 10px;
+    }
+
+    .whychoise {
+        padding-top: 40px;
+    }
+
+    .content1 button {
+        height: 55px;
+        width: 300px;
+        font-size: 1.2rem;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    .textcon h1 {
+        margin-top: 40px;
+        font-size: 4rem;
+    }
+
+    .textcon p {
+        font-size: 1.2rem;
+    }
+
+    .threecondiyion {
+        margin-top: 80px;
+    }
+
+    .box5 {
+        width: 400px;
+    }
+
+    .box5 button {
+        height: 70px;
+        width: 70px;
+        font-size: 2.8rem;
+        margin-top: 40px;
+        margin-left: 30px;
+    }
+
+    .box5 h1 {
+        font-size: 2rem;
+    }
+
+    .box5 h3 {
+        font-size: 1.2rem;
+    }
+
+    .locationofShop {
+        height: 800px;
+        margin-top: 80px;
+        margin-bottom: 160px;
+    }
+
+    .mother-Container-loc p {
+        font-size: 3.5rem;
+        width: 70%;
+        text-align: center;
+    }
+
+    .mother-Container-loc button {
+        height: 60px;
+        width: 250px;
+        margin-top: 15px;
+        font-size: 1.2rem;
+    }
+
+    .imgoflocation1 img {
+        height: 350px;
+        top: -400px;
+    }
+
+    .imgoflocation2 img {
+        height: 350px;
+        top: -530px;
+    }
+
+    .imgoflocation3 img {
+        height: 350px;
+        top: -550px;
+    }
+
+    .footerbox1 {
+        height: 250px;
+        width: 260px;
+        margin-top: 50px;
+    }
+
+    .footerbox1 button {
+        height: 50px;
+        width: 200px;
+        font-size: 1.4rem;
+    }
+
+    .footerbox1 a {
+        font-size: 1rem;
+    }
+
+    .footerbox2 {
+        height: 250px;
+        width: 260px;
+        margin-top: 50px;
+    }
+
+    .footerbox2 h1 {
+        font-size: 2.5rem;
+    }
+
+    .footerbox2 p {
+        font-size: 1rem;
+    }
+
+    .footerbox3 {
+        height: 250px;
+        width: 260px;
+        margin-top: 50px;
+    }
+
+    .footerbox3 h1 {
+        font-size: 2.5rem;
+    }
+
+    .footerbox3 p {
+        font-size: 1rem;
+    }
+
+    .footerbox4 {
+        height: 250px;
+        width: 260px;
+        margin-top: 50px;
+    }
+
+    .footerbox4 h1 {
+        font-size: 2.5rem;
+    }
+
+    .footerbox4 p {
+        font-size: 1rem;
+    }
+
+    .onesubfootbox {
+        width: 40%;
+    }
+
+    .onesubfootbox p {
+        font-size: 1rem;
+    }
+
+    .twosubfootbox p {
+        font-size: 1rem;
+    }
+}
+
+/* Styling of admin and user page  */
+
+.Mother {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 500px;
+    width: 95%;
+    margin-left: 2.5%;
+}
+
+.card-backbg {
+    margin-top: 1rem !important;
+    background-image: url("https://res.cloudinary.com/dbq93byo2/image/upload/w_500/v1746164703/12805_o1wa5u.jpg");
+    color: #FBDB93;
+    width: 18rem;
+    height: auto;
+}
+
+.card-text {
+    color: yellow !important;
+}
+
+.text-body-secondary {
+    color: rgb(205, 205, 205) !important;
+}
+
+.RTPS {
+    display: none;
+    width: 100%;
+}
+
+.heading-of-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbarofadmin {
+    display: flex;
+    justify-content: end;
+}
+
+#deletbtn {
+    display: flex;
+}
+
+.foralignthethisdiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.serviceTitle {
+    text-align: center;
+    color: aquamarine;
+    text-decoration: underline;
+}
+
+#Listidtemdropofuser {
+    width: 200px;
+}
+
+.usernameinusehome {
+    display: flex;
+    justify-content: end;
+}
+
+.usernameinusehome p {
+    font-size: 1.3rem;
+    color: aquamarine;
+    margin-right: 2rem;
+}
+
+#forshowafterrenderbtnclick {
+    display: none;
+}
+
+.ToolsOfThisListings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.navArea {
+    display: flex;
+    justify-content: end;
+}
+
+#HidetheAddlistForm {
+    display: none;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.table-primary-headofthis {
+    height: 50px !important;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.trbodyStyle {
+    height: auto;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.toolsHeading {
+    text-decoration: underline;
+    color: aqua;
+}
+
+#deletebuttonofsublist {
+    display: none;
+}
+
+.displaythe-Buttoninshoe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#editbtnofsublisting {
+    display: none;
+}
+
+table,
+th,
+td {
+    border: 2px solid rgb(246, 246, 137);
+}
+
+table {
+    width: 100%;
+}
+
+table tr th:first-child {
+    width: 33.33%;
+}
+
+table tr th:last-child {
+    width: 66.67%;
+}
+
+.userdata {
+    text-align: center;
+    text-decoration: underline;
+    color: aqua;
+    margin-bottom: 20px;
+}
+
+.tableheaderuserdata {
+    height: 70px;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.tablefooteruserdata {
+    height: 40px;
+    font-size: 1.3rem;
+}
+
+.bolddata1user {
+    font-weight: bolder;
+}
+
+.tableheaderuserdata th {
+    color: orangered;
+}
+
+.foruserdataeditback {
+    display: flex;
+    justify-content: end;
+}
+
+#forshowafterrenderbtnclick {
+    display: none;
+}
+
+.ToolsOfThisListings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.navArea {
+    display: flex;
+    justify-content: end;
+}
+
+#HidetheAddlistForm {
+    display: none;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.table-primary-headofthis {
+    height: 50px !important;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.trbodyStyle {
+    height: auto;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.toolsHeading {
+    text-decoration: underline;
+    color: aqua;
+}
+
+#deletebuttonofsublist {
+    display: none;
+}

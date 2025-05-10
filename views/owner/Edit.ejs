@@ -1,0 +1,58 @@
+<% layout("/layouts/boilerplateOwner.ejs") %>
+
+    <main>
+        <div class="col-8 offset-2">
+            <div class="offset-5 mt-5 mb-4 text-info text-decoration-underline">
+                <h1>Edit Listing</h1>
+            </div>
+            <form action="/listing/<%= listing._id %>?_method=PUT" method="post" novalidate class="needs-validation">
+                <div class="mb-3">
+                    <label for="title" class="form-label">Title</label>
+                    <input type="text" name="title" class="form-control" value="<%= listing.title %>" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Please Enter a title.
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="subtitle" class="form-label">Subtitle</label>
+                    <input type="text" name="subtitle" id="subtitle" class="form-control"
+                        value="<%= listing.subtitle %>" required></input>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Please Enter a Description.
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="description" class="form-label">Description</label>
+                    <input type="text" name="description" id="" class="form-control" value="<%= listing.description %>"
+                        required></input>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Please Enter a Description.
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                            Agree to terms and conditions
+                        </label>
+                        <div class="invalid-feedback">
+                            You must agree before submitting.
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-success mt-2">Save List</button>
+                <a href="/listing/admin">
+                    <p class="btn btn-danger ms-2 mt-4">Cancle</p>
+                </a>
+            </form>
+        </div>
+    </main>
