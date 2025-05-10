@@ -105,7 +105,9 @@ app.use("/owner", OwnerRouter);
 app.use("/user", userRouter);
 app.use("/listing", listingRout);
 
-
+app.get('/', (req, res) => {
+    res.render("user/index.ejs");
+});
 
 app.use((err, req, res, next) => {
     let { statusCode = 500, message = "Clint side error" } = err;
