@@ -1523,3 +1523,101 @@ table {
 #deletebuttonofsublist {
     display: none;
 }
+
+
+/* Card styling */
+.listing-card {
+    border: none !important;
+    margin-bottom: 2rem;
+
+}
+
+#rowalignbyid {
+    display: flex !important;
+    justify-content: space-evenly !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    width: 70% !important;
+}
+
+#forshowcenterthis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#rowalignimage {
+    width: 95% !important;
+    background-color: black !important;
+}
+
+/* .card-img-top {
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+} */
+
+.card-body {
+    padding: 0rem !important;
+}
+
+.card-text {
+    text-align: center;
+    margin-top: 1rem;
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    font-optical-sizing: auto !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
+}
+
+.listing-link {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#productimagesetup {
+    width: 60%;
+}
+
+#subimagestyle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: black;
+    width: 50%;
+}
+
+#productheading {
+    display: flex !important;
+    justify-content: center !important;
+    color: greenyellow;
+}
+
+#motherdivalignbyid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#motherdivalignbyidedit {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* card effect */
+
+.card-img-overlay {
+    opacity: 0;
+}
+
+.card-img-overlay:hover {
+    opacity: 0.2;
+    background-color: white;
+}
+
+.btn-success {
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+}

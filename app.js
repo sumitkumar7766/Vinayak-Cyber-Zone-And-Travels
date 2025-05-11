@@ -8,7 +8,6 @@ const app = express();
 app.use(express.json());
 const path = require('path');
 const ejsMate = require('ejs-mate');
-app.use(express.json());
 const User = require("./models/user");
 const Owner = require("./models/owner");
 const passport = require("passport");
@@ -23,6 +22,7 @@ const methodOverride = require("method-override");
 const OwnerRouter = require("./routes/owner.js");
 const userRouter = require("./routes/user.js");
 const listingRout = require("./routes/listing.js");
+const shopstockRout = require("./routes/shopstock.js");
 
 const dbUrl =  process.env.ATLASDB_URL;
 const SECRET = process.env.SECRET;
@@ -102,6 +102,7 @@ app.use((req, res, next) => {
 app.use("/owner", OwnerRouter);
 app.use("/user", userRouter);
 app.use("/listing", listingRout);
+app.use("/shopstock", shopstockRout);
 
 app.get('/', (req, res) => {
     res.render("user/index.ejs");
