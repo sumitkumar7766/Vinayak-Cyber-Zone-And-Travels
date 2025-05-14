@@ -23,6 +23,8 @@ const OwnerRouter = require("./routes/owner.js");
 const userRouter = require("./routes/user.js");
 const listingRout = require("./routes/listing.js");
 const shopstockRout = require("./routes/shopstock.js");
+const reviewRouter = require("./routes/review.js");
+
 
 const dbUrl =  process.env.ATLASDB_URL;
 const SECRET = process.env.SECRET;
@@ -103,6 +105,7 @@ app.use("/owner", OwnerRouter);
 app.use("/user", userRouter);
 app.use("/listing", listingRout);
 app.use("/shopstock", shopstockRout);
+app.use("/shopstock/listings/:id/reviews", reviewRouter);
 
 app.get('/', (req, res) => {
     res.render("user/index.ejs");

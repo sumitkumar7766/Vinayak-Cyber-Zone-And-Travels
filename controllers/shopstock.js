@@ -28,7 +28,7 @@ module.exports.addlisting = wrapAsync(async(req, res) => {
 
 module.exports.showlistings = wrapAsync(async(req, res) => {
     let { id } = req.params;
-    const listing = await Shopstock.findById(id).populate("owner");
+    const listing = await Shopstock.findById(id).populate({ path: "reviews", populate: { path: "author", } }).populate("owner");
     if (!listing) {
         req.flash("error", "Listing You requested does not existed");
         res.redirect("/listings");
@@ -44,4 +44,22 @@ module.exports.deletlistingproduct = wrapAsync(async(req, res) => {
     console.log(deletitem);
     req.flash("success", "Listing Deleted!");
     res.redirect("/shopstock/owner/listing");
+})
+
+module.exports.gotothelistinguserpage = wrapAsync(async(req, res) => {
+    const allListings = await Shopstock.find({});
+    res.render("listings/userlisting.ejs", { allListings });
+    console.log(allListings);
+})
+
+module.exports.shouserlisting = wrapAsync(async(req, res) => {
+    let { id } = req.params;
+    const listing = await Shopstock.findById(id).populate({ path: "reviews", populate: { path: "author", } }).populate("owner");
+    if (!listing) {
+        req.flash("error", "Listing You requested does not existed");
+        res.redirect("/listings");
+    } else {
+        console.log(listing);
+        res.render("listings/usershow.ejs", { listing });
+    }
 })

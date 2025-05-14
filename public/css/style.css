@@ -1318,10 +1318,6 @@ footer {
     height: auto;
 }
 
-.card-text {
-    color: yellow !important;
-}
-
 .text-body-secondary {
     color: rgb(205, 205, 205) !important;
 }
@@ -1405,9 +1401,9 @@ table {
 }
 
 .trbodyStyle {
-    height: auto;
-    font-size: 1.1rem;
-    text-align: center;
+    height: auto !important;
+    font-size: 1.1rem !important;
+    text-align: center !important;
 }
 
 .toolsHeading {
@@ -1432,7 +1428,7 @@ table {
 table,
 th,
 td {
-    border: 2px solid rgb(246, 246, 137);
+    border: 2px solid rgb(255, 204, 0);
 }
 
 table {
@@ -1509,12 +1505,6 @@ table {
     font-size: 1.2rem;
 }
 
-.trbodyStyle {
-    height: auto;
-    font-size: 1.1rem;
-    text-align: center;
-}
-
 .toolsHeading {
     text-decoration: underline;
     color: aqua;
@@ -1551,23 +1541,13 @@ table {
     background-color: black !important;
 }
 
-/* .card-img-top {
-    border-radius: 1rem !important;
-    width: 100% !important;
-    object-fit: cover !important;
-} */
-
-.card-body {
-    padding: 0rem !important;
-}
-
 .card-text {
-    text-align: center;
     margin-top: 1rem;
     font-family: "Plus Jakarta Sans", sans-serif !important;
     font-optical-sizing: auto !important;
     font-weight: 400 !important;
     font-style: normal !important;
+    color: yellow;
 }
 
 .listing-link {
@@ -1617,7 +1597,22 @@ table {
     background-color: white;
 }
 
-.btn-success {
-    margin-top: 1rem !important;
-    margin-bottom: 1rem !important;
+.twosubfootbox a {
+    text-decoration: none;
+}
+
+#LinkedInclick {
+    cursor: pointer;
+}
+
+#Instagramclick {
+    cursor: pointer;
+}
+
+#Facebookclick {
+    cursor: pointer;
+}
+
+#onrender {
+    margin-top: 1rem;
 }

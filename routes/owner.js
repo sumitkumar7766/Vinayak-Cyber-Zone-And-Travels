@@ -54,5 +54,10 @@ router.post("/agentlogin", passport.authenticate("local", { failureRedirect: "ag
 //logout
 router.get("/logout", isLoggedInOwner, ownerCentroller.logout );
 
+//craeter page
+router.get("/creater", async(req, res) => {
+    res.render("user/creater.ejs")
+})
+
 
 module.exports = router;

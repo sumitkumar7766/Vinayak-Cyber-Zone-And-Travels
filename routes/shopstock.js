@@ -16,4 +16,8 @@ router.post("/owner/listing", isLoggedInOwner, upload.single('shopstock[image]')
 router.get("/listings/:id", isLoggedInOwner, shopstockcontrol.showlistings);
 router.delete("/listings/:id", isLoggedInOwner, shopstockcontrol.deletlistingproduct)
 
+//renderthelistingofuser
+router.get("/user/listing", isLoggedIn, shopstockcontrol.gotothelistinguserpage)
+router.get("/user/listings/:id", isLoggedIn, shopstockcontrol.shouserlisting)
+
 module.exports = router;

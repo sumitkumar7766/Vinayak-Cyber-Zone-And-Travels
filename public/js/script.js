@@ -51,6 +51,8 @@ cancelButton.addEventListener("click", () => {
   hideNewlistbtn.style.display = "none";
   onrender.style.display = "inline";
   ForshowtheToosl.style.display = "inline";
+  gobackbutton.style.display = "inline";
+  editbuttinforSublisting.style.display = "inline";
 })
 
 editbuttinforSublisting.addEventListener("click", () => {
@@ -58,5 +60,4 @@ editbuttinforSublisting.addEventListener("click", () => {
   document.querySelectorAll("#editbtnofsublisting").forEach(button => button.style.display = "inline");
 });
 
-
-
+// Clickable button for creater image logo

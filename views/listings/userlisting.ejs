@@ -1,19 +1,16 @@
-<% layout("/layouts/boilerplateOwner.ejs") %>
+<% layout("/layouts/boilerplateUser.ejs") %>
 
     <main>
         <hr>
         <div class="navArea">
-            <form action="/shopstock/addproductform" method="get">
-                <button class="btn btn-success me-4" id="onrender">Add Product</button>
-            </form>
-            <form action="/owner/admin" method="get">
+            <form action="" method="get">
                 <button class="btn btn-warning me-3 mt-3" >Go Back !</button>
             </form>
         </div>
         <div id="forshowcenterthis">
         <div class="row row-cols-lg-3 row-cols-md-2 row-cols-1 mt-3" id="rowalignbyid">
             <% for (listing of allListings) { %>
-                <a href="/shopstock/listings/<%= listing._id %>" class="listing-link">
+                <a href="/shopstock/user/listings/<%= listing._id %>" class="listing-link">
                     <div class="card col listing-card show-cradsforcategree" id="rowalignimage">
                         <img src="<%= listing.image.url %>" class="card-img-top" alt="listing_image"
                             style="height: 20rem;">
