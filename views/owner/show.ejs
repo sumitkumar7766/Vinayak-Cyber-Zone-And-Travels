@@ -1,121 +1,189 @@
 <% layout("/layouts/boilerplateOwner.ejs") %>
 
-    <main>
-        <hr>
-        <div class="navArea">
-            <button class="btn btn-success me-3 " id="onrender">Add New Sublisting</button>
-            <div id="HidetheAddlistForm">
-                <button class="btn btn-danger me-5" id="cancelButton">Cancel </button>
-            </div>
-            <form action="/owner/admin" method="get">
-                <button class="btn btn-warning me-3 mt-3" id="gobackbutton">Go Back !</button>
-            </form>
-            <form onsubmit="return false">
-            <button class="btn btn-danger me-3 mt-3" id="editbuttinforSublisting">Edit !</button>
-            </form>
-        </div>
-        <div class="navbarofadmin1">
-            <div id="forshowafterrenderbtnclick">
-                <div class="col-9 offset-2">
-                    <div class="offset-5 mt-5 mb-4 text-info text-decoration-underline">
-                        <h1>Add New Sublisting</h1>
-                    </div>
-                    <form action="/owner/addlisting/<%= listing._id %>/sublisting" method="post" novalidate
-                        class="needs-validation">
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Name</label>
-                            <input type="text" name="sublisting[name]" class="form-control" required>
-                            <div class="valid-feedback">
-                                Looks good!
-                            </div>
-                            <div class="invalid-feedback">
-                                Please Enter a title.
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="work" class="form-label">Work</label>
-                            <input type="text" name="sublisting[work]" id="work" class="form-control"
-                                required></input>
-                            <div class="valid-feedback">
-                                Looks good!
-                            </div>
-                            <div class="invalid-feedback">
-                                Please Enter a Description.
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="link" class="form-label">Link</label>
-                            <input type="text" name="sublisting[link]" id="" class="form-control"
-                                required></input>
-                            <div class="valid-feedback">
-                                Looks good!
-                            </div>
-                            <div class="invalid-feedback">
-                                Please Enter a Description.
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                                <label class="form-check-label" for="invalidCheck">
-                                    Agree to terms and conditions
-                                </label>
-                                <div class="invalid-feedback">
-                                    You must agree before submitting.
-                                </div>
-                            </div>
-                        </div>
+    <main class="py-4">
 
-                        <button class="btn btn-success mt-3">Add List</button>
+        <!-- Top Action Bar -->
+        <div class="container mb-4">
+            <div class="d-flex flex-wrap align-items-center gap-2 justify-content-between">
+
+                <div class="d-flex flex-wrap gap-2">
+                    <button class="btn btn-success" id="onrender">
+                        Add New Sublisting
+                    </button>
+                </div>
+
+                <div class="d-flex flex-wrap gap-2">
+                    <form action="/owner/admin" method="get" class="m-0">
+                        <button class="btn btn-warning" id="gobackbutton">
+                            Go Back !
+                        </button>
+                    </form>
+
+                    <form onsubmit="return false" class="m-0">
+                        <button class="btn btn-outline-info" id="editbuttinforSublisting">
+                            Edit !
+                        </button>
                     </form>
                 </div>
             </div>
+        </div>
 
-        </div>
-        <div id="ForshowtheToosl">
-            <div>
-                <div style="text-align: center;">
-                    <h1 class="toolsHeading mt-2 mb-3">Tools</h1>
-                </div>
-            </div>
-            <div style="display: flex; justify-content: center; width: 100%;">
-                <div>
-                    <table class="table table-dark table-bordered border-danger" style="width: 1500px;">
-                        <thead>
-                            <tr class="table-primary table-primary-headofthis">
-                                <th style="width: 30%;">Tools Name</th>
-                                <th style="width: 40%;">Tools Work</th>
-                                <th style="width: 20%;">Working Button</th>
-                            </tr>
-                        </thead>
-                        <tbody class="table-group-divider border-danger">
-                            <% for(sublisting of listing.sublisting) { %>
-                                <tr class="table-info trbodyStyle">
-                                    <td style="font-weight: bolder; font-size: 1.2rem;">
-                                        <p class="text-dark mt-4"><%= sublisting.name %></p>
-                                    </td>
-                                    <td>
-                                        <p class="text-dark mt-4"><%= sublisting.work %></p>
-                                    </td>
-                                    <td>
-                                        <div class="displaythe-Buttoninshoe">
-                                        <a href="<%= sublisting.link %>" target="_blank">
-                                            <button class="btn btn-success mt-3">Apply !</button>
-                                        </a>
-                                        <form action="/listing/sublisting/<%= sublisting._id %>?_method=DELETE"
-                                            method="POST" style="display: inline;">
-                                            <button class="btn btn-danger ms-3 mt-3" type="submit" id="deletebuttonofsublist">Delete</button>
-                                        </form>
-                                        <form action="/listing/sublisting/<%= sublisting._id %>/edit" method="get">
-                                            <button class="btn btn-warning ms-3 mt-3" id="editbtnofsublisting">Edit</button>
-                                        </form>
+        <!-- Add Sublisting Form -->
+        <section class="navbarofadmin1">
+            <div id="forshowafterrenderbtnclick" class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-md-10">
+
+                        <div class="card shadow-lg border-0 mb-4">
+                            <div class="card-header bg-gradient bg-dark text-white text-center">
+                                <h2 class="h4 mb-0 text-uppercase">Add New Sublisting</h2>
+                            </div>
+
+                            <div class="card-body bg-dark">
+                                <form action="/owner/addlisting/<%= listing._id %>/sublisting" method="post" novalidate
+                                    class="needs-validation">
+
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label fw-semibold">Name</label>
+                                        <input type="text" name="sublisting[name]" id="name" class="form-control"
+                                            placeholder="Enter tool name" required>
+                                        <div class="valid-feedback">
+                                            Looks good!
                                         </div>
-                                    </td>
-                                </tr>
-                                <% } %>
-                        </tbody>
-                    </table>
+                                        <div class="invalid-feedback">
+                                            Please enter a title.
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="work" class="form-label fw-semibold">Work</label>
+                                        <input type="text" name="sublisting[work]" id="work" class="form-control"
+                                            placeholder="What does this tool do?" required>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Please enter a description.
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="link" class="form-label fw-semibold">Link</label>
+                                        <input type="text" name="sublisting[link]" id="link" class="form-control"
+                                            placeholder="Paste tool link here" required>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Please enter a link.
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3 form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck"
+                                            required>
+                                        <label class="form-check-label" for="invalidCheck">
+                                            Agree to terms and conditions
+                                        </label>
+                                        <div class="invalid-feedback">
+                                            You must agree before submitting.
+                                        </div>
+                                    </div>
+
+                                    <div class="d-grid">
+                                        <button class="btn btn-success btn-lg">
+                                            Add List
+                                        </button>
+                                    </div>
+                                    <div id="HidetheAddlistForm" class="d-grid mt-2">
+                                        <button class="btn btn-outline-danger fw-bolder fs-1" id="cancelButton">
+                                            Cancel
+                                        </button>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <!-- Tools Table -->
+        <section id="ForshowtheToosl" class="mt-4">
+            <div class="container">
+
+                <div class="text-center mb-3">
+                    <h1 class="text-info fw-bold text-uppercase">
+                        Tools
+                    </h1>
+                    <p class="text-white mb-0 fs-5">
+                        Manage all your sublistings from here
+                    </p>
+                </div>
+
+                <div class="card shadow-lg border-0">
+                    <div class="card-body p-0">
+
+                        <div class="table-responsive">
+                            <table class="table table-hover mb-0 align-middle">
+                                <thead class="table-dark">
+                                    <tr class="text-center">
+                                        <th style="width: 30%;">Tools Name</th>
+                                        <th style="width: 40%;">Tools Work</th>
+                                        <th style="width: 30%;">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-group-divider">
+                                    <% for(sublisting of listing.sublisting) { %>
+                                        <tr>
+                                            <td class="fw-bold fs-6">
+                                                <p class="mb-0 text-dark text-center">
+                                                    <%= sublisting.name %>
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p class="mb-0 text-muted">
+                                                    <%= sublisting.work %>
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex flex-wrap gap-2 justify-content-center">
+
+                                                    <a href="<%= sublisting.link %>" target="_blank"
+                                                        class="btn btn-sm btn-success mt-1">
+                                                        Apply
+                                                    </a>
+
+                                                    <form
+                                                        action="/listing/sublisting/<%= sublisting._id %>?_method=DELETE"
+                                                        method="POST" class="m-0">
+                                                        <button class="btn btn-sm btn-outline-danger mt-1" type="submit"
+                                                            id="deletebuttonofsublist">
+                                                            Delete
+                                                        </button>
+                                                    </form>
+
+                                                    <form action="/listing/sublisting/<%= sublisting._id %>/edit"
+                                                        method="get" class="m-0">
+                                                        <button class="btn btn-sm btn-outline-warning mt-1"
+                                                            id="editbtnofsublisting">
+                                                            Edit
+                                                        </button>
+                                                    </form>
+
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <% } %>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
     </main>

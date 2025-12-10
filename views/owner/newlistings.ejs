@@ -1,15 +1,20 @@
 <% layout("/layouts/boilerplateOwner.ejs") %>
 
-    <main>
-        <hr>
-        <div class="col-8 offset-2 mt-5">
-            <div class="offset-4 mt-4 mb-3">
-                <h1 class="text-info text-decoration-underline">Add New Listing</h1>
+<main class="container my-5">
+    
+    <div class="row justify-content-center">
+        <div class="col-lg-12">
+            
+            <div class="text-center mb-5">
+                <h1 class="display-6 fw-bold text-warning border-bottom border-warning pb-2">Add New Listing</h1>
             </div>
-            <form action="/owner/addlisting" method="post" novalidate class="needs-validation">
+            
+            <form action="/owner/addlisting" method="post" novalidate 
+                  class="needs-validation p-4 border rounded shadow-lg bg-info">
+                
                 <div class="mb-3">
-                    <label for="title" class="form-label">Title</label>
-                    <input type="text" name="title" class="form-control" required>
+                    <label for="title" class="form-label fw-bold">Title</label>
+                    <input type="text" name="title" id="title" class="form-control" required>
                     <div class="valid-feedback">
                         Looks good!
                     </div>
@@ -17,9 +22,21 @@
                         Please Enter a title.
                     </div>
                 </div>
+                
                 <div class="mb-3">
-                    <label for="subtitle" class="form-label">Subtitle</label>
-                    <textarea type="text" name="subtitle" id="subtitle" class="form-control" required></textarea>
+                    <label for="subtitle" class="form-label fw-bold">Subtitle</label>
+                    <textarea name="subtitle" id="subtitle" class="form-control" rows="2" required></textarea>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Please Enter a subtitle.
+                    </div>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="description" class="form-label fw-bold">Description</label>
+                    <textarea name="description" id="description" class="form-control" rows="4" required></textarea>
                     <div class="valid-feedback">
                         Looks good!
                     </div>
@@ -27,17 +44,8 @@
                         Please Enter a Description.
                     </div>
                 </div>
-                <div class="mb-3">
-                    <label for="description" class="form-label">Description</label>
-                    <textarea type="text" name="description" id="" class="form-control" required></textarea>
-                    <div class="valid-feedback">
-                        Looks good!
-                    </div>
-                    <div class="invalid-feedback">
-                        Please Enter a Description.
-                    </div>
-                </div>
-                <div class="col-12">
+                
+                <div class="mb-4">
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
                         <label class="form-check-label" for="invalidCheck">
@@ -48,12 +56,18 @@
                         </div>
                     </div>
                 </div>
-                <button class="btn btn-success mt-2">Add List</button>
-
+                
+                <button type="submit" class="btn btn-success w-100">
+                    <i class="bi bi-plus-lg me-1"></i> Add List
+                </button>
             </form>
-            <form action="/owner/admin" method="get">
-                <button class="btn btn-warning mt-2">Go Back</button>
-            </form>
 
+            <form action="/owner/admin" method="get" class="mt-3">
+                <button class="btn btn-outline-danger w-100">
+                    <i class="bi bi-arrow-left me-1"></i> Go Back
+                </button>
+            </form>
+            
         </div>
-    </main>
+    </div>
+</main>

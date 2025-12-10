@@ -19,15 +19,13 @@ body {
     text-align: left;
     margin: 0px;
     padding: 0px;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bolder;
     color: #ffffff;
     text-decoration: none;
     font-family: "Londrina Sketch", sans-serif;
     font-style: normal;
-    margin-top: 10px;
     animation: Zoomin 2s infinite;
-    margin-left: 20px;
 
 }
 
@@ -40,14 +38,13 @@ header {
     text-align: left;
     margin: 0px;
     padding: 0px;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: bolder;
     color: #ffffff;
     text-decoration: none;
     font-family: "Londrina Sketch", sans-serif;
     font-style: normal;
     animation: Zoomin 2s infinite;
-    margin-left: 90px;
 
 }
 
@@ -74,8 +71,8 @@ header {
 
     50% {
         /* font-size: 3.5rem; */
-        text-shadow: 0px 0px 30px red;
-        color: red;
+        text-shadow: 0px 0px 30px rgb(55, 255, 0);
+        color: rgb(89, 255, 0);
     }
 
     100% {
@@ -1616,3 +1613,377 @@ table {
 #onrender {
     margin-top: 1rem;
 }
+
+
+/* new Stylish component  */
+
+* {
+    color: white;
+}
+
+body {
+    background-color: black;
+    background-image: url("https://res.cloudinary.com/dbq93byo2/image/upload/v1745850927/7_eyn0td.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    font-family: "Londrina Sketch", sans-serif;
+    font-size: 2rem;
+    animation: glow 2s infinite;
+}
+
+@keyframes glow {
+
+    0%,
+    100% {
+        text-shadow: none;
+    }
+
+    50% {
+        text-shadow: 0 0 20px red;
+        color: red;
+    }
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+    padding: 1rem 0;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    font-size: 1.1rem;
+    margin: 0 1rem;
+    transition: all 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: red !important;
+    text-shadow: 0 0 10px red;
+}
+
+.btn-agent {
+    background-color: orangered;
+    color: rgb(191, 248, 78);
+    font-weight: bold;
+    border: none;
+    padding: 0.5rem 1.5rem;
+}
+
+.btn-agent:hover {
+    background-color: greenyellow;
+    color: black;
+}
+
+.hero-section {
+    padding-top: 150px;
+    text-align: center;
+}
+
+.badge-custom {
+    background-color: rgb(2, 32, 75);
+    padding: 0.8rem 2rem;
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 1.2rem;
+}
+
+.owner-name {
+    font-size: clamp(3rem, 8vw, 5.5rem);
+    font-weight: bold;
+    color: rgb(189, 187, 187);
+    margin: 2rem 0 1rem 0;
+}
+
+.location-text {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.btn-welcome {
+    background-color: orangered;
+    color: rgb(190, 255, 59);
+    padding: 1rem 3rem;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    border: none;
+    margin: 2rem 0;
+}
+
+.hero-image {
+    margin-top: 3rem;
+    animation: fadeIn 1s;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.section-title {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    margin: 3rem 0 1rem 0;
+    color: rgb(0, 242, 255);
+}
+
+.partners-container {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 15px;
+    margin: 2rem 0;
+}
+
+.partners-container img {
+    height: 100px;
+    margin: 1rem;
+    transition: transform 0.3s;
+}
+
+.partners-container img:hover {
+    transform: scale(1.1);
+}
+
+.services-section {
+    background-color: white;
+    padding: 4rem 0;
+    margin-top: 4rem;
+    border-radius: 10px;
+}
+
+.services-section * {
+    color: black;
+}
+
+.service-badge {
+    background-color: rgb(205, 243, 255);
+    padding: 0.8rem 2rem;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 2rem 0 1rem 0;
+}
+
+.service-title {
+    font-size: 4rem;
+    font-weight: 100;
+    color: black !important;
+}
+
+.btn-book {
+    background-color: orangered;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    border: none;
+    margin: 2rem 0;
+}
+
+.btn-book:hover {
+    background-color: greenyellow;
+    color: black;
+}
+
+.service-card {
+    background-color: black;
+    border-radius: 15px;
+    padding: 2rem;
+    margin: 1rem 0;
+    transition: transform 0.3s;
+    height: 100%;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card h3 {
+    color: white !important;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.service-card p {
+    color: white !important;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.service-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+.why-section {
+    padding: 4rem 0;
+    margin-top: 4rem;
+}
+
+.why-badge {
+    background-color: #e4f4ff;
+    color: black;
+    padding: 0.8rem 2rem;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.why-title {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    color: rgb(255, 255, 170);
+    margin: 2rem 0 1rem 0;
+}
+
+.why-subtitle {
+    font-size: 1.3rem;
+    color: rgb(252, 225, 225);
+}
+
+.feature-card {
+    background-color: rgb(164, 208, 226);
+    border-radius: 20px;
+    padding: 3rem 2rem;
+    margin: 1rem 0;
+    transition: all 0.3s;
+}
+
+.feature-card:hover {
+    background-color: rgb(197, 231, 243);
+    transform: translateY(-5px);
+}
+
+.feature-number {
+    background-color: orangered;
+    width: 75px;
+    height: 75px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+    color: black !important;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.feature-card p {
+    color: rgb(60, 59, 59) !important;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.location-section {
+    background-color: black;
+    padding: 4rem 0;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.location-title {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    margin: 2rem 0;
+    line-height: 1.4;
+}
+
+.btn-map {
+    background-color: orangered;
+    color: white;
+    padding: 1.2rem 3rem;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    border: none;
+    margin: 2rem 0;
+}
+
+.btn-map:hover {
+    background-color: greenyellow;
+    color: black;
+}
+
+.location-images img {
+    width: 100%;
+    border-radius: 15px;
+    margin: 1rem 0;
+    transition: transform 0.3s;
+}
+
+.location-images img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: white;
+    padding: 4rem 0 2rem 0;
+    margin-top: 4rem;
+}
+
+footer * {
+    color: black;
+}
+
+.footer-logo {
+    font-family: "Londrina Sketch", sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.footer-link {
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin: 0.5rem 0;
+}
+
+.footer-link:hover {
+    color: orangered !important;
+    text-decoration: underline;
+}
+
+.btn-footer {
+    background-color: orangered;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    border: none;
+    margin: 1rem 0;
+}
+
+.btn-footer:hover {
+    background-color: greenyellow;
+    color: black;
+}
+
+.footer-bottom {
+    border-top: 1px solid #ddd;
+    padding-top: 2rem;
+    margin-top: 3rem;
+}
+

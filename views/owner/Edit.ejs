@@ -1,44 +1,51 @@
 <% layout("/layouts/boilerplateOwner.ejs") %>
 
-    <main>
-        <div class="col-8 offset-2">
-            <div class="offset-5 mt-5 mb-4 text-info text-decoration-underline">
-                <h1>Edit Listing</h1>
+<main class="container my-5">
+    
+    <div class="row">
+        <div class="col-lg-12">
+            
+            <div class="text-center mb-5">
+                <h1 class="display-6 fw-bold text-warning border-bottom border-warning pb-2">Edit Listing</h1>
             </div>
+            
             <form action="/listing/<%= listing._id %>?_method=PUT" method="post" novalidate class="needs-validation">
+                
                 <div class="mb-3">
                     <label for="title" class="form-label">Title</label>
-                    <input type="text" name="title" class="form-control" value="<%= listing.title %>" required>
+                    <input type="text" name="title" id="title" class="form-control" 
+                           value="<%= listing.title %>" required>
                     <div class="valid-feedback">
                         Looks good!
                     </div>
                     <div class="invalid-feedback">
-                        Please Enter a title.
+                        Please enter a title.
                     </div>
                 </div>
+                
                 <div class="mb-3">
                     <label for="subtitle" class="form-label">Subtitle</label>
-                    <input type="text" name="subtitle" id="subtitle" class="form-control"
-                        value="<%= listing.subtitle %>" required></input>
+                    <textarea name="subtitle" id="subtitle" class="form-control" rows="2" required><%= listing.subtitle %></textarea>
                     <div class="valid-feedback">
                         Looks good!
                     </div>
                     <div class="invalid-feedback">
-                        Please Enter a Description.
+                        Please enter a subtitle.
                     </div>
                 </div>
+                
                 <div class="mb-3">
                     <label for="description" class="form-label">Description</label>
-                    <input type="text" name="description" id="" class="form-control" value="<%= listing.description %>"
-                        required></input>
+                    <textarea name="description" id="description" class="form-control" rows="4" required><%= listing.description %></textarea>
                     <div class="valid-feedback">
                         Looks good!
                     </div>
                     <div class="invalid-feedback">
-                        Please Enter a Description.
+                        Please enter a description.
                     </div>
                 </div>
-                <div class="col-12">
+                
+                <div class="mb-3">
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
                         <label class="form-check-label" for="invalidCheck">
@@ -49,10 +56,17 @@
                         </div>
                     </div>
                 </div>
-                <button class="btn btn-success mt-2">Save List</button>
-                <a href="/listing/admin">
-                    <p class="btn btn-danger ms-2 mt-4">Cancle</p>
-                </a>
+                
+                <div class="d-flex justify-content-start align-items-center mt-4">
+                    <button type="submit" class="btn btn-success me-3">
+                        <i class="bi bi-save-fill me-1"></i> Save List
+                    </button>
+                    
+                    <a href="/listing/admin" class="btn btn-outline-danger">
+                        <i class="bi bi-x-circle-fill me-1"></i> Cancel
+                    </a>
+                </div>
             </form>
-        </div>
-    </main>
+            </div>
+    </div>
+</main>
