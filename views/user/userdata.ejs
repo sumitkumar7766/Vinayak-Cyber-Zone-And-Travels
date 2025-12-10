@@ -1,75 +1,111 @@
 <% layout("/layouts/boilerplateUser.ejs") %>
 
 
-    <main>
-        <hr>
-        <div class="foruserdataeditback">
-            <form action="/user/<%= userdata._id %>/edit" method="get">
-                <button class="btn btn-success me-3">Edit</button>
-            </form>
-            <form action="/user/userhome" method="get">
-                <button class="btn btn-warning me-4">Back</button>
-            </form>
-        </div>
-        <div class="col-8 offset-2 mt-4 mb-5">
-            <h1 class="userdata">Your Data</h1>
-            <table>
-                <tr class="tableheaderuserdata">
-                    <th>List</th>
-                    <th>Value</th>
-                </tr>
-                <tr class="tablefooteruserdata">
-                    <td class="bolddata1user ps-2">Name :</td>
-                    <td class="text-warning ps-2"><%= userdata.name %></td>
-                </tr>
-                <tr class="tablefooteruserdata">
-                    <td class="bolddata1user ps-2">Username :</td>
-                    <td class="text-warning ps-2"><%= userdata.username %></td>
-                </tr>
-                <tr class="tablefooteruserdata">
-                    <td class="bolddata1user ps-2">Gmail :</td>
-                    <td class="text-warning ps-2"><%= userdata.email %></td>
-                </tr>
-                <tr class="tablefooteruserdata">
-                    <td class="bolddata1user ps-2">Father Name :</td>
-                    <td class="text-warning ps-2"><%= userdata.fathername %></td>
-                </tr>
-                <tr class="tablefooteruserdata">
-                    <td class="bolddata1user ps-2">Mother Name :</td>
-                    <td class="text-warning ps-2"><%= userdata.mothername %></td>
-                </tr>
-                <tr class="tablefooteruserdata">
-                    <td class="bolddata1user ps-2">Mobile No. 1 :</td>
-                    <td class="text-warning ps-2"><%= userdata.mobileno %></td>
-                </tr>
-                <tr class="tablefooteruserdata">
-                    <td class="bolddata1user ps-2">Gram :</td>
-                    <td class="text-warning ps-2"><%= userdata.gram %></td>
-                </tr>
-                <tr class="tablefooteruserdata">
-                    <td class="bolddata1user ps-2">Post :</td>
-                    <td class="text-warning ps-2"><%= userdata.post %></td>
-                </tr>
-                <tr class="tablefooteruserdata">
-                    <td class="bolddata1user ps-2">Thana :</td>
-                    <td class="text-warning ps-2"><%= userdata.thana %></td>
-                </tr>
-                <tr class="tablefooteruserdata">
-                    <td class="bolddata1user ps-2">City :</td>
-                    <td class="text-warning ps-2"><%= userdata.thana %></td>
-                </tr>
-                <tr class="tablefooteruserdata">
-                    <td class="bolddata1user ps-2">State :</td>
-                    <td class="text-warning ps-2"><%= userdata.state %></td>
-                </tr>
-                <tr class="tablefooteruserdata">
-                    <td class="bolddata1user ps-2">Country :</td>
-                    <td class="text-warning ps-2"><%= userdata.country %></td>
-                </tr>
-                <tr class="tablefooteruserdata">
-                    <td class="bolddata1user ps-2">Pincode :</td>
-                    <td class="text-warning ps-2"><%= userdata.pincode %></td>
-                </tr>
-            </table>
-        </div>
-    </main>
+<main class="py-4">
+  <hr class="mb-4">
+
+  <div class="container">
+
+    <!-- Action Buttons -->
+    <div class="d-flex justify-content-end gap-2 mb-3">
+
+      <form action="/user/<%= userdata._id %>/edit" method="get" class="m-0">
+        <button class="btn btn-success">Edit</button>
+      </form>
+
+      <form action="/user/userhome" method="get" class="m-0">
+        <button class="btn btn-warning">Back</button>
+      </form>
+
+    </div>
+
+    <!-- User Data Section -->
+    <div class="col-lg-8 mx-auto">
+
+      <h1 class="text-center mb-4 text-info">Profile Details</h1>
+
+      <div class="table-responsive">
+        <table class="table table-bordered table-striped table-hover align-middle shadow-sm">
+
+          <thead class="table-dark text-center">
+            <tr>
+              <th style="width: 30%;">List</th>
+              <th style="width: 70%;">Value</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <tr>
+              <td class="fw-bold">Name :</td>
+              <td class="text-primary"><%= userdata.name %></td>
+            </tr>
+
+            <tr>
+              <td class="fw-bold">Username :</td>
+              <td class="text-primary"><%= userdata.username %></td>
+            </tr>
+
+            <tr>
+              <td class="fw-bold">Gmail :</td>
+              <td class="text-primary"><%= userdata.email %></td>
+            </tr>
+
+            <tr>
+              <td class="fw-bold">Father Name :</td>
+              <td class="text-primary"><%= userdata.fathername %></td>
+            </tr>
+
+            <tr>
+              <td class="fw-bold">Mother Name :</td>
+              <td class="text-primary"><%= userdata.mothername %></td>
+            </tr>
+
+            <tr>
+              <td class="fw-bold">Mobile No. 1 :</td>
+              <td class="text-primary"><%= userdata.mobileno %></td>
+            </tr>
+
+            <tr>
+              <td class="fw-bold">Gram :</td>
+              <td class="text-primary"><%= userdata.gram %></td>
+            </tr>
+
+            <tr>
+              <td class="fw-bold">Post :</td>
+              <td class="text-primary"><%= userdata.post %></td>
+            </tr>
+
+            <tr>
+              <td class="fw-bold">Thana :</td>
+              <td class="text-primary"><%= userdata.thana %></td>
+            </tr>
+
+            <tr>
+              <td class="fw-bold">City :</td>
+              <td class="text-primary"><%= userdata.city %></td>
+            </tr>
+
+            <tr>
+              <td class="fw-bold">State :</td>
+              <td class="text-primary"><%= userdata.state %></td>
+            </tr>
+
+            <tr>
+              <td class="fw-bold">Country :</td>
+              <td class="text-primary"><%= userdata.country %></td>
+            </tr>
+
+            <tr>
+              <td class="fw-bold">Pincode :</td>
+              <td class="text-primary"><%= userdata.pincode %></td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+  </div>
+</main>

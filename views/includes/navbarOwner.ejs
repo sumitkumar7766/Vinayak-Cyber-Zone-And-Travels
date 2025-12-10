@@ -1,30 +1,54 @@
 <header>
-    <div class="mainnav">
-        <div class="logo-container">
-            <p class="logo">Vinayak Cyber Zone </p>
-            <p class="logo2">& Travels</p>
-        </div>
-        <div class="navelement">
-            <a href="">REQUEST</a>
-            <a href="https://b2b.riya.travel/" target="_blank">TICKET</a>
-            <a href="">LATEST FORM</a>
-            <a href="/shopstock/owner/listing">SHOP STOCK</a>
-            <a href="">NOTICE</a>
-        </div>
-        <div class="btn-group">
-            <button type="button" class="btn btn-info dropdown-toggle agentbuttonprofile" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Your Profile
+    <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-sm">
+        <div class="container-fluid">
+            
+            <a class="navbar-brand d-flex flex-column p-0 me-auto" href="admin">
+                <span class="fs-4 fw-bold text-light">Vinayak Cyber Zone</span> 
+                <span class="fs-5 text-warning">& Travels</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" 
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <ul class="dropdown-menu bg-info text-center" id="Listidtemdropofuser">
-                <li><a class="dropdown-item" href="#">View Profile</a></li>
-                <li><a class="dropdown-item" href="#">Wallet</a></li>
-                <li><a class="dropdown-item" href="#">Task Adder</a></li>
-                <li>
-                    <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="/owner/logout">Log Out</a></li>
-            </ul>
+            
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                
+                <ul class="navbar-nav mx-auto me-auto"> 
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#">REQUEST</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="https://b2b.riya.travel/" target="_blank">TICKET</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#">LATEST FORM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="/shopstock/owner/listing">SHOP STOCK</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#">NOTICE</a>
+                    </li>
+                </ul>
+                
+                <div class="btn-group ms-lg-3">
+                    <button type="button" class="btn  btn-info dropdown-toggle text-black fw-bold" 
+                            data-bs-toggle="dropdown" aria-expanded="false" style="width: 10rem;">
+                        <i class="bi bi-person-circle me-1"></i> Your Profile
+                    </button>
+                    
+                    <ul class="dropdown-menu dropdown-menu-end bg-info text-center">
+                        <li><a class="dropdown-item text-black" href="#"><i class="bi bi-eye-fill me-1"></i> View Profile</a></li>
+                        <li><a class="dropdown-item text-black" href="#"><i class="bi bi-wallet-fill me-1"></i> Wallet</a></li>
+                        <li><a class="dropdown-item text-black" href="#"><i class="bi bi-check-lg me-1"></i> Task Adder</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item text-danger fw-bold" href="/owner/logout"><i class="fa-solid fa-arrow-right-from-bracket text-danger"></i> Log Out</a></li>
+                    </ul>
+                </div>
+
+            </div>
         </div>
-    </div>
+    </nav>
 </header>

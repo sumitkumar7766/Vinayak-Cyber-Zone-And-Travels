@@ -1,116 +1,157 @@
 <% layout("/layouts/boilerplate.ejs") %>
 
-    <main>
-        <div class="maincontent">
-            <div class="content">
-                <button>Cybersecurity Cafe</button>
-            </div>
-            <div class="nameofowner">
-                <p>OWNER</p>
-                <p>KUNDAN KUMAR JAISWAL</p>
-            </div>
-            <div class="location">
-                <p>LOCATION : FRONT OF UCO BANK NANDLALPUR, KAHALGAON, BHAGALPUR, BIHAR , 813222</p>
-            </div>
-            <div class="welcome">
-                <button>WELCOME</button>
-            </div>
-            <div class="imgofmainthing">
+<main>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container mt-0">
+            <div class="badge-custom">Cybersecurity Cafe</div>
+            <p class="mt-3 mb-2">OWNER</p>
+            <h1 class="owner-name">KUNDAN KUMAR JAISWAL</h1>
+            <p class="location-text">LOCATION: FRONT OF UCO BANK NANDLALPUR, KAHALGAON, BHAGALPUR, BIHAR, 813222</p>
+            <button class="btn-welcome">WELCOME</button>
+            <div class="hero-image mt-5">
                 <img src="https://static.wixstatic.com/media/511164_366e459460a74a9aaf7218088674da7c~mv2.png/v1/crop/x_0,y_0,w_1921,h_1080/fill/w_1921,h_1063,fp_0.50_0.50,q_95,enc_avif,quality_auto/Image%20(21).png"
-                    alt="">
+                    alt="Cyber Zone" class="img-fluid">
             </div>
-            <div class="relatedwork">
-                <p class="one11">ONLINE RELATED OUR WORK</p>
-                <p style="font-size: 25px;">SPONSERDE BY ____ BANK</p>
-                <div class="imagecontar">
-                    <img src="https://res.cloudinary.com/dbq93byo2/image/upload/v1745850922/1_ivvlv4.png" alt="">
-                    <img src="https://res.cloudinary.com/dbq93byo2/image/upload/v1745850923/2_grubkm.png" alt="">
-                    <img src="https://res.cloudinary.com/dbq93byo2/image/upload/v1745850922/3_cxzu62.png" alt="">
-                    <img src="https://res.cloudinary.com/dbq93byo2/image/upload/v1745850922/4_fi0nf7.png" alt="">
-                    <img src="https://res.cloudinary.com/dbq93byo2/image/upload/v1745850922/5_y1mqrc.png" alt="">
-                    <img src="https://res.cloudinary.com/dbq93byo2/image/upload/v1745850925/6_gq3bls.png" alt="">
-                </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section id="services" class="container text-center mt-5 pt-5">
+        <h2 class="section-title">ONLINE RELATED OUR WORK</h2>
+        <p style="font-size: 1.5rem;">SPONSORED BY ____ BANK</p>
+        <div class="partners-container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-6 col-md-2"><img
+                        src="https://res.cloudinary.com/dbq93byo2/image/upload/v1745850922/1_ivvlv4.png" alt="Partner"
+                        class="img-fluid"></div>
+                <div class="col-6 col-md-2"><img
+                        src="https://res.cloudinary.com/dbq93byo2/image/upload/v1745850923/2_grubkm.png" alt="Partner"
+                        class="img-fluid"></div>
+                <div class="col-6 col-md-2"><img
+                        src="https://res.cloudinary.com/dbq93byo2/image/upload/v1745850922/3_cxzu62.png" alt="Partner"
+                        class="img-fluid"></div>
+                <div class="col-6 col-md-2"><img
+                        src="https://res.cloudinary.com/dbq93byo2/image/upload/v1745850922/4_fi0nf7.png" alt="Partner"
+                        class="img-fluid"></div>
+                <div class="col-6 col-md-2"><img
+                        src="https://res.cloudinary.com/dbq93byo2/image/upload/v1745850922/5_y1mqrc.png" alt="Partner"
+                        class="img-fluid"></div>
+                <div class="col-6 col-md-2"><img
+                        src="https://res.cloudinary.com/dbq93byo2/image/upload/v1745850925/6_gq3bls.png" alt="Partner"
+                        class="img-fluid"></div>
             </div>
-            <div class="travelmain">
-                <div class="travelbutton">
-                    <button>TRAVELS RELATED ALL THE WORKS</button>
-                </div>
-                <div class="trainticket">
-                    <h1>TRAIN TICKET</h1>
-                    <p>WE ARE PROVIDED E-TCKET FOR TRAIN AND FLIGHT</p>
-                    <button>BOOK TICKET</button>
-                </div>
-                <div class="boxmain">
-                    <div class="box1">
-                        <h1>BANK CSP</h1>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section mt-5">
+        <div class="container text-center">
+            <div class="service-badge">TRAVELS RELATED ALL THE WORKS</div>
+            <h2 class="service-title mt-3">TRAIN TICKET</h2>
+            <p style="font-size: 1.5rem; color: #666;">WE ARE PROVIDED E-TICKET FOR TRAIN AND FLIGHT</p>
+            <button class="btn-book">BOOK TICKET</button>
+
+            <div class="row mt-5 g-4">
+                <div class="col-lg-6 col-xl-3">
+                    <div class="service-card">
+                        <h3>BANK CSP</h3>
                         <p>ग्राहक सेवा केंद्र । यहाँ पर सभी बैंक के राशि को जमा और निकासी किया जाता है । आधार न० के
                             द्वारा ।</p>
-                        <img src="https://res.cloudinary.com/dbq93byo2/image/upload/v1745850930/11_uh61xd.png" alt="">
-                    </div>
-                    <div class="box2">
-                        <h1>ONLINE FORM</h1>
-                        <p>यहाँ पर सभी प्रकार के नौकरियां के ऑनलाइन फ़ार्म <br>उचित दामों में भरे जाता है ।</p>
-                        <img src="https://res.cloudinary.com/dbq93byo2/image/upload/v1745850934/12_ydb3sh.jpg" alt="">
-                    </div>
-                    <div class="box3">
-                        <h1>CARD SERVICE </h1>
-                        <p>यहाँ पर सभी प्रकार के सरकारी कार्ड अप्लाय एव हार्ड कॉपी बनाकर <br>उचित दामों में दिए जाते है
-                            । जैसे पेन कार्ड , आधार कार्ड, <br>लेबर कार्ड , आयुष्मान कार्ड etc.</p>
-                        <img src="https://res.cloudinary.com/dbq93byo2/image/upload/v1745850932/14_evnbdm.avif" alt="">
-                    </div>
-                    <div class="box4">
-                        <h1>TRANNING AND CERTIFICATE</h1>
-                        <p>यहाँ पर सभी प्रकार के ऑनलाइन कोर्स करये जाते है एवं उसके सर्टिफ़िकेट प्रदान किए जाते हैं जैसे
-                            कि कंप्यूटर सिखना, टाइपिंग स्किल्स, कम्युनिकेशन स्किल इत्यादि । </p>
-                        <img src="https://res.cloudinary.com/dbq93byo2/image/upload/v1745851856/15_bynztc.jpg" alt="">
+                        <img src="https://res.cloudinary.com/dbq93byo2/image/upload/v1745850930/11_uh61xd.png"
+                            alt="Bank CSP" class="img-fluid">
                     </div>
                 </div>
+                <div class="col-lg-6 col-xl-3">
+                    <div class="service-card">
+                        <h3>ONLINE FORM</h3>
+                        <p>यहाँ पर सभी प्रकार के नौकरियां के ऑनलाइन फ़ार्म उचित दामों में भरे जाता है ।</p>
+                        <img src="https://res.cloudinary.com/dbq93byo2/image/upload/v1745850934/12_ydb3sh.jpg"
+                            alt="Online Form" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-3">
+                    <div class="service-card">
+                        <h3>CARD SERVICE</h3>
+                        <p>यहाँ पर सभी प्रकार के सरकारी कार्ड अप्लाय एव हार्ड कॉपी बनाकर उचित दामों में दिए जाते है ।
+                            जैसे पेन कार्ड, आधार कार्ड, लेबर कार्ड, आयुष्मान कार्ड etc.</p>
+                        <img src="https://res.cloudinary.com/dbq93byo2/image/upload/v1745850932/14_evnbdm.avif"
+                            alt="Card Service" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-3">
+                    <div class="service-card">
+                        <h3>TRAINING AND CERTIFICATE</h3>
+                        <p>यहाँ पर सभी प्रकार के ऑनलाइन कोर्स करये जाते है एवं उसके सर्टिफ़िकेट प्रदान किए जाते हैं जैसे
+                            कि कंप्यूटर सिखना, टाइपिंग स्किल्स, कम्युनिकेशन स्किल इत्यादि ।</p>
+                        <img src="https://res.cloudinary.com/dbq93byo2/image/upload/v1745851856/15_bynztc.jpg"
+                            alt="Training" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Why Choose Us Section -->
+    <section id="about" class="why-section">
+        <div class="container">
+            <div class="text-start">
+                <div class="why-badge">WHY YOU TRUSTED</div>
+                <h2 class="why-title">WHY CHOOSE VINAYAK CYBER ZONE</h2>
+                <p class="why-subtitle">WE PROVIDE SERVICE IN AFFORDABLE PRICE AND QUICK SERVICE.</p>
+            </div>
 
+            <div class="row mt-5 g-4">
+                <div class="col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-number">1</div>
+                        <h3>100% SERVICE PROVIDE ON TIME</h3>
+                        <p>OUR CUSTOMER GIVE US RATING OF 5 OUT OF 5 FOR PROVIDING QUICK SERVICE AND 100% GENUINE.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-number">2</div>
+                        <h3>WE HAVE A TRAINING CELL</h3>
+                        <p>IF YOU JOIN OUR TRAINING CELL THEN WE PROVIDE U ONE SEPARATE SYSTEM WITH ONE FACULTY WHO
+                            GUIDE U AND HELP TO IMPROVE YOUR COMPUTER SKILLS AND ALSO PROVIDE A CERTIFICATE FOR SPECIAL
+                            COURSE.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-number">3</div>
+                        <h3>TRAVELS SERVICE</h3>
+                        <p>WE ARE AFFILIATED TO THE TRAVELS AGENCY. IF U HAVE ANY QUERY ABOUT TRAVELS SYSTEM OF INDIA
+                            LIKE E-TICKET, AND MAP ROUTE, PROPER GUIDE FOR TRAVELS, BOOK HOTEL, STAY CONNECTED TO
+                            JOURNEY, YOU CAN CONNECT WITH US.</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="whychoise">
-            <div class="content1">
-                <button>WHY YOU TRUSTED</button>
-            </div>
-            <div class="textcon">
-                <h1>WHY CHOOSE VINAYAK CYBER ZONE</h1>
-                <p>WE PROVIDE SERVICE IN AFFERTABE PRICE AND QUICK SERVICE.</p>
-            </div>
-        </div>
-        <div class="threecondiyion">
-            <div class="box5">
-                <button>1</button><br>
-                <h1>100 % SERVICE PROVIDE ON TIME</h1>
-                <h3>OUR CUSTOMER GIVE US RATING OF 5 OUT OF 5 FOR PROVIDING QUICK SERVICE AND 100% JENVINE .</h3>
-            </div>
-            <div class="box5">
-                <button>2</button><br>
-                <h1>WE HAVE A TRANING CELL</h1>
-                <h3>IF YOU JOIN OUR TRAING CELL THEN WE PROVIDE U ONE SEPRET SYSTEM WITH ONE FACULTY WHO GUIDE U AND
-                    HELP TO IMPROVE YOUR COMPUTER SKILES AND ALSO PROVIDE A CERTIFICATE FOR SPECIAL COURSE.</h3>
-            </div>
-            <div class="box5">
-                <button>3</button><br>
-                <h1>TRAVELS SERVICE</h1>
-                <h3>WE ARE AFFILIATED TO THE TRAVELS AGENCY. IF U HAVE ANY QUARY ABOUT TRAVELS SYSTEM OF INDIA LIKE
-                    E-TECKET, AND MAP ROOT, PROPER GUIDE FOR TRAVELS, BOOK HOTEL, STAY CONNECTERD TO JOUNEY, YOU CAN
-                    CONECT WITH US.</h3>
+    </section>
+
+    <!-- Location Section -->
+    <section id="contact" class="location-section">
+        <div class="container">
+            <p class="location-title">WHERE VINAYAK CYBER ZONE & TRAVELS LOCATED ON GOOGLE MAP</p>
+            <a href="https://maps.app.goo.gl/b5qz1JXLaYEzVYik7" target="_blank">
+                <button class="btn-map">MAP DIRECTION</button>
+            </a>
+            <div class="row mt-5 location-images g-4">
+                <div class="col-md-4">
+                    <img src="https://res.cloudinary.com/dbq93byo2/image/upload/v1745850861/img6_is3fbi.jpg"
+                        alt="Location" class="img-fluid">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://res.cloudinary.com/dbq93byo2/image/upload/v1745850859/img8_luwzfb.jpg"
+                        alt="Location" class="img-fluid">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://res.cloudinary.com/dbq93byo2/image/upload/v1745850861/img12_zy7l5a.jpg"
+                        alt="Location" class="img-fluid">
+                </div>
             </div>
         </div>
-        <div class="locationofShop">
-            <div class="mother-Container-loc">
-                <p>WHERE VINAYAK CYBER ZONE & TRAVELS LOCATED ON GOOGLE MAP</p>
-                <a href="https://maps.app.goo.gl/b5qz1JXLaYEzVYik7" target="_blank"><button>MAP DIRECTION</button></a>
-            </div>
-            <div class="imgoflocation1">
-                <img src="https://res.cloudinary.com/dbq93byo2/image/upload/v1745850861/img6_is3fbi.jpg" alt="">
-            </div>
-            <div class="imgoflocation2">
-                <img src="https://res.cloudinary.com/dbq93byo2/image/upload/v1745850859/img8_luwzfb.jpg" alt="">
-            </div>
-            <div class="imgoflocation3">
-                <img src="https://res.cloudinary.com/dbq93byo2/image/upload/v1745850861/img12_zy7l5a.jpg" alt="">
-            </div>
-        </div>
-    </main>
+    </section>
+</main>

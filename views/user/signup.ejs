@@ -1,151 +1,189 @@
 <% layout("/layouts/boilerplate.ejs") %>
 
 
-    <div class="row">
-        <div class="col-8 offset-2">
-            <br><br>
-            <h3>Enter Your Detail</h3>
-            <form action="/user/newuser" method="post" novalidate class="needs-validation">
-                <div class="mb-3">
-                    <label for="name" class="form-label">Name</label>
-                    <input type="text" name="name" class="form-control" required>
-                    <div class="invalid-feedback">
-                        Please Enter Your Name.
+    <main class="container py-5">
+    
+    <div class="row justify-content-center">
+        
+        <div class="col-lg-12 col-md-10">
+            
+            <div class="text-center mb-5">
+                <h3 class="display-5 fw-bold text-primary border-bottom border-secondary pb-2">Create Your Account</h3>
+            </div>
+            
+            <form action="/user/newuser" method="post" novalidate 
+                  class="needs-validation p-4 border rounded-3 shadow-lg bg-info">
+                
+                <h4 class="mb-4 text-dark"><i class="bi bi-person-fill me-2"></i> Personal Details</h4>
+                <hr class="mb-4">
+                
+                <div class="row">
+                    <div class="mb-3 col-md-6 ">
+                        <label for="name" class="form-label fw-bold text-black">Name</label>
+                        <input type="text" name="name" id="name" class="form-control" required>
+                        <div class="invalid-feedback">
+                            Please enter your Name.
+                        </div>
+                    </div>
+                    <div class="mb-3 col-md-6">
+                        <label for="username" class="form-label fw-bold text-black">Username</label>
+                        <input type="text" name="username" id="username" class="form-control" required>
+                        <div class="invalid-feedback">
+                            Please enter your username.
+                        </div>
                     </div>
                 </div>
-                <div class="mb-3">
-                    <label for="username" class="form-label">Username</label>
-                    <input type="text" name="username" class="form-control" required>
-                    <div class="invalid-feedback">
-                        Please Enter Your username.
+                
+                <div class="row">
+                    <div class="mb-3 col-md-6">
+                        <label for="fathername" class="form-label fw-bold text-black">Father Name</label>
+                        <input type="text" name="fathername" id="fathername" class="form-control" required>
+                        <div class="invalid-feedback">
+                            Please enter your Father Name.
+                        </div>
+                    </div>
+                    <div class="mb-3 col-md-6">
+                        <label for="mothername" class="form-label fw-bold text-black">Mother Name</label>
+                        <input type="text" name="mothername" id="mothername" class="form-control" required>
+                        <div class="invalid-feedback">
+                            Please enter your Mother Name.
+                        </div>
                     </div>
                 </div>
-                <div class="mb-3">
-                    <label for="fathername" class="form-label">Father Name</label>
-                    <input type="text" name="fathername" id="fathername" class="form-control" required>
-                    <div class="invalid-feedback">
-                        Please Enter Your Father Name.
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label for="mothername" class="form-label">Mother Name</label>
-                    <input type="text" name="mothername" id="mothername" class="form-control" required>
-                    <div class="invalid-feedback">
-                        Please Enter Your Mother Name.
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="text" name="email" id="email" class="form-control" required>
-                    <div id="emailHelpBlock" class="form-text-light">
+
+                <div class="mb-4">
+                    <label for="email" class="form-label fw-bold text-black">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="example@domain.com" required>
+                    <div id="emailHelpBlock" class="form-text text-muted small">
                         Your email is your user ID, so please fill in the correct email ID.
                     </div>
                     <div class="invalid-feedback">
-                        Please Enter Your correct Email.
+                        Please enter your correct Email address.
                     </div>
                 </div>
-                <hr>
-                <h4>Address : </h4>
-                <div class="row ">
+
+                <h4 class="mb-4 text-dark"><i class="bi bi-geo-alt-fill me-2 "></i> Address Details</h4>
+                <hr class="mb-4">
+                
+                <div class="row">
                     <div class="mb-3 col-md-6">
-                        <label for="gram" class="form-label">Gram : </label>
+                        <label for="gram" class="form-label fw-bold text-black">Gram / Village</label>
                         <input type="text" name="gram" id="gram" class="form-control" required>
                         <div class="invalid-feedback">
-                            Please Enter The Gram.
+                            Please enter the Gram / Village name.
                         </div>
                     </div>
                     <div class="mb-3 col-md-6">
-                        <label for="post" class="form-label">Enter Post</label>
+                        <label for="post" class="form-label fw-bold text-black">Post Office</label>
                         <input type="text" name="post" id="post" class="form-control" required>
                         <div class="invalid-feedback">
-                            Please Enter the Post.
+                            Please enter the Post Office name.
                         </div>
                     </div>
                 </div>
-                <div class="row ">
+                
+                <div class="row">
                     <div class="mb-3 col-md-6">
-                        <label for="thana" class="form-label">Thana : </label>
+                        <label for="thana" class="form-label fw-bold text-black">Police Station (Thana)</label>
                         <input type="text" name="thana" id="thana" class="form-control" required>
                         <div class="invalid-feedback">
-                            Please Enter The Thana.
+                            Please enter the Police Station name.
                         </div>
                     </div>
                     <div class="mb-3 col-md-6">
-                        <label for="city" class="form-label">City : </label>
+                        <label for="city" class="form-label fw-bold text-black">City / District</label>
                         <input type="text" name="city" id="city" class="form-control" required>
-                        <div id="passwordHelpBlock" class="form-text-light">
+                        <div id="cityHelpBlock" class="form-text text-muted small">
                             Your District is the City.
                         </div>
                         <div class="invalid-feedback">
-                            Please Enter the City.
+                            Please enter the City / District.
                         </div>
                     </div>
+                </div>
+
+                <div class="row">
                     <div class="mb-3 col-md-12">
-                        <label for="state" class="form-label">State : </label>
+                        <label for="state" class="form-label fw-bold text-black">State</label>
                         <input type="text" name="state" id="state" class="form-control" required>
                         <div class="invalid-feedback">
-                            Please Enter Your State.
+                            Please enter your State.
                         </div>
                     </div>
-                </div>
-                    <div class="row ">
                     <div class="mb-3 col-md-6">
-                        <label for="country" class="form-label">Country : </label>
+                        <label for="country" class="form-label fw-bold text-black">Country</label>
                         <input type="text" name="country" id="country" class="form-control" required>
                         <div class="invalid-feedback">
-                            Please Enter The Country.
+                            Please enter the Country.
                         </div>
                     </div>
                     <div class="mb-3 col-md-6">
-                        <label for="pincode" class="form-label">PinCode : </label>
+                        <label for="pincode" class="form-label fw-bold text-black">PinCode / ZIP</label>
                         <input type="text" name="pincode" id="pincode" class="form-control" required>
-                        <div id="pincodeHelpBlock" class="form-text-light">
-                            You can also enter the ZIP code.
-                        </div>
                         <div class="invalid-feedback">
-                            Please Enter the Pincode.
+                            Please enter the Pincode.
                         </div>
                     </div>
                 </div>
-                <div class="mb-3">
-                    <label for="mobileno" class="form-label">Enter Mobile Number</label>
-                    <input type="text" name="mobileno" id="mobileno" class="form-control" required>
+                
+                <div class="mb-4">
+                    <label for="mobileno" class="form-label fw-bold text-black">Mobile Number</label>
+                    <input type="tel" name="mobileno" id="mobileno" class="form-control" required>
                     <div class="invalid-feedback">
-                        Please Enter the Mobile No.
+                        Please enter the Mobile Number.
                     </div>
                 </div>
-                <br>
-                <hr>
-                    <div class="mb-4 col-md-12">
-                        <label for="password" class="form-label">Create Your Password : </label>
-                        <div class="input-group">
-                            <input type="password" name="password" id="password" class="form-control" required>
-                            <button type="button" class="btn btn-outline-secondary" id="togglePassword">Show</button>
-                        </div>
-                        <div id="passwordHelpBlock" class="form-text-light">
-                            Your password must be 8-20 characters long, contain letters and numbers, @ , and must not
-                            contain spaces, special characters, or emoji.
-                        </div>
+
+                <h4 class="mb-4 text-dark"><i class="bi bi-lock-fill me-2"></i> Password Setup</h4>
+                <hr class="mb-4">
+                
+                <div class="mb-4">
+                    <label for="password" class="form-label fw-bold text-black">Create Your Password</label>
+                    <div class="input-group">
+                        <input type="password" name="password" id="password" class="form-control" required>
+                        <button type="button" class="btn btn-outline-danger" id="togglePassword">
+                            <i class="bi bi-eye"></i> Show
+                        </button>
+                    </div>
+                    <div id="passwordHelpBlock" class="form-text text-muted small">
+                        Your password must be 8-20 characters long, contain letters and numbers, @ , and must not
+                        contain spaces, special characters, or emoji.
+                    </div>
+                    <div class="invalid-feedback">
+                        Please enter the new Password.
+                    </div>
+                </div>
+                
+                <div class="mb-4">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                            Agree to terms and conditions
+                        </label>
                         <div class="invalid-feedback">
-                            Please Enter The New Password.
+                            You must agree before submitting.
                         </div>
                     </div>
-                    <hr>
-                    <div class="col-12 mb-3">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                            <label class="form-check-label" for="invalidCheck">
-                                Agree to terms and conditions
-                            </label>
-                            <div class="invalid-feedback">
-                                You must agree before submitting.
-                            </div>
-                        </div>
-                    </div>
+                </div>
 
-                    <button class="btn btn-success mrg-top-2">Create Account</button>
-
-
+                <div class="d-grid mt-4">
+                    <button type="submit" class="btn btn-success btn-lg">
+                        <i class="bi bi-person-plus-fill me-2"></i> Create Account
+                    </button>
+                </div>
             </form>
-        </div>
+            </div>
     </div>
+</main>
+
+<script>
+    // Simple JavaScript for toggling password visibility
+    document.getElementById('togglePassword').addEventListener('click', function (e) {
+        const passwordInput = document.getElementById('password');
+        const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+        passwordInput.setAttribute('type', type);
+        
+        // Update button text/icon
+        this.innerHTML = type === 'password' ? '<i class="bi bi-eye"></i> Show' : '<i class="bi bi-eye-slash"></i> Hide';
+    });
+</script>
