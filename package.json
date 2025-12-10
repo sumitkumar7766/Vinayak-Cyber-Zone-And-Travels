@@ -1,6 +1,6 @@
 {
   "engines": {
-    "node": "23.10.0"
+    "node": ">=23.10.0"
   },
   "name": "kundan-project",
   "version": "1.0.0",
